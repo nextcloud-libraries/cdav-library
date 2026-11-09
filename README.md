@@ -4,7 +4,7 @@
 -->
 # cdav-library
 
-[![REUSE status](https://api.reuse.software/badge/github.com/nextcloud/cdav-library)](https://api.reuse.software/info/github.com/nextcloud/cdav-library)
+[![REUSE status](https://api.reuse.software/badge/github.com/nextcloud-libraries/cdav-library)](https://api.reuse.software/info/github.com/nextcloud-libraries/cdav-library)
 [![NPM Version](https://img.shields.io/npm/v/%40nextcloud%2Fcdav-library)](https://www.npmjs.com/package/@nextcloud/cdav-library)
 
 :date: 📇 CalDAV and CardDAV client library for JavaScript

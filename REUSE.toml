@@ -3,7 +3,7 @@
 version = 1
 SPDX-PackageName = "cdav-library"
 SPDX-PackageSupplier = "Nextcloud <info@nextcloud.com>"
-SPDX-PackageDownloadLocation = "https://github.com/nextcloud/cdav-library"
+SPDX-PackageDownloadLocation = "https://github.com/nextcloud-libraries/cdav-library"
 
 [[annotations]]
 path = ["package.json", "package-lock.json", "tsconfig.json", "test/types/*.json", "test/assets/unit/parser/dprop.xml"]
