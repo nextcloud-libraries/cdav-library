@@ -31,7 +31,8 @@
     "test:watch": "vitest",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "changelog": "conventional-changelog -p angular -n changelog.config.js -i CHANGELOG.md -s",
+    "changelog:full": "conventional-changelog -p angular -n changelog.config.js -i CHANGELOG.md -s -r 0",
     "test:types": "npm run build && npm run check:types",
     "check:types": "tsc -p test/types/tsconfig.json && tsc -p test/types/tsconfig.bundler.json"
   },
