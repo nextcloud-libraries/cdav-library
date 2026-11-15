@@ -1,11 +1,30 @@
-# [2.8.0](https://github.com/nextcloud-libraries/cdav-library/compare/v2.7.0...v2.8.0) (2026-08-31)
+
+## [2.8.2](https://github.com/nextcloud-libraries/cdav-library/compare/v2.8.1...v2.8.2) (2026-11-09)
+
+## [2.8.1](https://github.com/nextcloud-libraries/cdav-library/compare/v2.8.0...v2.8.1) (2026-11-06)
+
+
+### Bug Fixes
+
+* **client:** validate DAV header presence and connection options ([5c9bf82](https://github.com/nextcloud-libraries/cdav-library/commit/5c9bf82bf65407114eca864758d231546d6319c9)), closes [#7703](https://github.com/nextcloud-libraries/cdav-library/issues/7703)
+* **deps:** bump @vitest/browser from 5.0.3 to v5.0.5 ([#1114](https://github.com/nextcloud-libraries/cdav-library/issues/1114)) ([daab7e1](https://github.com/nextcloud-libraries/cdav-library/commit/daab7e1c6a3ef395a61228f3671f1ee71c107a08))
+* **deps:** Fix npm audit ([c986686](https://github.com/nextcloud-libraries/cdav-library/commit/c986686b3ce8931a624d65932e97a25ec225b2f9))
+* **deps:** Fix npm audit ([6ca5504](https://github.com/nextcloud-libraries/cdav-library/commit/6ca55041e375dc9f7595a703cc8c41f70a94e584))
+* **deps:** Fix npm audit ([614d803](https://github.com/nextcloud-libraries/cdav-library/commit/614d8031d8884b22796c52f2f6bfca037574664d))
+
+
+### Features
+
+* add option to disable fetch after put ([b2abd64](https://github.com/nextcloud-libraries/cdav-library/commit/b2abd6444eb5d32c74c954080a3c9667f5f04b28))
+* parse and expose resource booking properties for calendar ([9a07859](https://github.com/nextcloud-libraries/cdav-library/commit/9a078590bd555a0c01afe8f19c44384b5c1f7fe4))
+* type script definitions ([dca8a7a](https://github.com/nextcloud-libraries/cdav-library/commit/dca8a7a8e2241afc67aaf7c8aa639bc9ed684c3e))
+
+# [2.8.0](https://github.com/nextcloud-libraries/cdav-library/compare/v2.7.0...v2.8.0) (2026-09-01)
 
 
 ### Features
 
 * **calendar:** parse {http://nextcloud.com/ns}disable-alarm-notifications property ([ea9825c](https://github.com/nextcloud-libraries/cdav-library/commit/ea9825c6e9bb5b67f92ba7b4bfa7b49a04ccd093))
-
-
 
 # [2.7.0](https://github.com/nextcloud-libraries/cdav-library/compare/v2.6.2...v2.7.0) (2026-08-20)
 
@@ -22,7 +41,7 @@
 
 * add building name ([cc19cca](https://github.com/nextcloud-libraries/cdav-library/commit/cc19cca6b5a1a1c5e6ee231a371371bb8e8979bc))
 
-
+## [2.6.2](https://github.com/nextcloud-libraries/cdav-library/compare/v2.6.1...v2.6.2) (2026-06-11)
 
 ## [2.6.1](https://github.com/nextcloud-libraries/cdav-library/compare/v2.6.0...v2.6.1) (2026-06-09)
 
@@ -30,8 +49,6 @@
 ### Bug Fixes
 
 * mocks with vitest v4 ([523ee99](https://github.com/nextcloud-libraries/cdav-library/commit/523ee99c4fed50c010c92c381e5eae2c7cc38526))
-
-
 
 # [2.6.0](https://github.com/nextcloud-libraries/cdav-library/compare/v2.5.1...v2.6.0) (2026-06-02)
 
@@ -48,8 +65,6 @@
 
 * add calendar delegation ([32122eb](https://github.com/nextcloud-libraries/cdav-library/commit/32122eb6e52c091152c9c1cf041c4d27289697bb))
 
-
-
 ## [2.5.1](https://github.com/nextcloud-libraries/cdav-library/compare/v2.5.0...v2.5.1) (2026-05-20)
 
 
@@ -57,16 +72,12 @@
 
 * set dirty flag with calendar data too ([6c59076](https://github.com/nextcloud-libraries/cdav-library/commit/6c590764168cfb0972ef94d14c7bc14c53ac9208))
 
-
-
 # [2.5.0](https://github.com/nextcloud-libraries/cdav-library/compare/v2.4.0...v2.5.0) (2026-05-07)
 
 
 ### Features
 
 * Add custom `favorite` property for each vCard ([41b28a3](https://github.com/nextcloud-libraries/cdav-library/commit/41b28a3429510dd8d81a71bda75166c502832a58))
-
-
 
 # [2.4.0](https://github.com/nextcloud-libraries/cdav-library/compare/v2.2.0...v2.4.0) (2026-05-04)
 
@@ -84,8 +95,6 @@
 
 * default full / part day alarm ([8779140](https://github.com/nextcloud-libraries/cdav-library/commit/87791407fe89a525054932e67eeabfa770af1735))
 
-
-
 # [2.2.0](https://github.com/nextcloud-libraries/cdav-library/compare/v2.1.1...v2.2.0) (2026-03-12)
 
 
@@ -99,16 +108,12 @@
 * add default reminder property ([4796cb4](https://github.com/nextcloud-libraries/cdav-library/commit/4796cb439698ebe0c6d2c31776fb48eaa7a7aa27))
 * implement proper acl checks ([f2203bc](https://github.com/nextcloud-libraries/cdav-library/commit/f2203bc3615094e2a9cae5b3391a7c8a3f8714e0))
 
-
-
 ## [2.1.1](https://github.com/nextcloud-libraries/cdav-library/compare/v2.1.0...v2.1.1) (2025-07-22)
 
 
 ### Bug Fixes
 
 * **deps:** Fix npm audit ([df48da9](https://github.com/nextcloud-libraries/cdav-library/commit/df48da9adc17422e83758c2e56060bb64fb18557))
-
-
 
 # [2.1.0](https://github.com/nextcloud-libraries/cdav-library/compare/v2.0.0...v2.1.0) (2025-05-30)
 
@@ -121,8 +126,6 @@
 ### Features
 
 * send custom default headers with each request ([8810a86](https://github.com/nextcloud-libraries/cdav-library/commit/8810a8641b9bc4ba002227548a88a753a29096bb))
-
-
 
 # [2.0.0](https://github.com/nextcloud-libraries/cdav-library/compare/v1.5.3...v2.0.0) (2025-05-07)
 
@@ -139,8 +142,6 @@
 
 * serialize namespaced attributes consistently across browsers ([a10ba02](https://github.com/nextcloud-libraries/cdav-library/commit/a10ba02441daf69aa17f1ca884b876c711721b3a))
 
-
-
 ## [1.5.3](https://github.com/nextcloud-libraries/cdav-library/compare/v1.5.2...v1.5.3) (2025-03-22)
 
 
@@ -149,8 +150,6 @@
 * **deps:** Fix npm audit ([7ea0647](https://github.com/nextcloud-libraries/cdav-library/commit/7ea06479eda3922546bfa6fe91467a343ff4f5a4))
 * **deps:** Fix npm audit ([cfdc175](https://github.com/nextcloud-libraries/cdav-library/commit/cfdc17569f59cb33ce992abe9ed7856d5a69f9d4))
 * **deps:** Fix npm audit ([38b6c33](https://github.com/nextcloud-libraries/cdav-library/commit/38b6c33426438def5073a688c947a45a429a83c3))
-
-
 
 ## [1.5.2](https://github.com/nextcloud-libraries/cdav-library/compare/v1.5.1...v1.5.2) (2024-10-14)
 
@@ -164,16 +163,12 @@
 * **deps:** Fix npm audit ([78fad58](https://github.com/nextcloud-libraries/cdav-library/commit/78fad581ced48f5f26128b66b13500cdb3ed4f6a))
 * **deps:** Fix npm audit ([df74a26](https://github.com/nextcloud-libraries/cdav-library/commit/df74a26e9a5c2156ca2ae6c096c908cc0513f430))
 
-
-
 ## [1.5.1](https://github.com/nextcloud-libraries/cdav-library/compare/v1.5.0...v1.5.1) (2024-07-17)
 
 
 ### Bug Fixes
 
 * add child to schedule-calendar-transp property ([17b7142](https://github.com/nextcloud-libraries/cdav-library/commit/17b7142a466c9e75bc9f7c3faf078c637066b7e6))
-
-
 
 # [1.5.0](https://github.com/nextcloud-libraries/cdav-library/compare/v1.4.0...v1.5.0) (2024-07-17)
 
@@ -186,8 +181,6 @@
 ### Features
 
 * expose scheduling transparency property ([e14ec0b](https://github.com/nextcloud-libraries/cdav-library/commit/e14ec0b81b8920ea85f45878a3a69d29cccee555))
-
-
 
 # [1.4.0](https://github.com/nextcloud-libraries/cdav-library/compare/v1.3.0...v1.4.0) (2024-06-10)
 
@@ -202,8 +195,6 @@
 * bundle with vite and provide an additional esm bundle ([8e920b0](https://github.com/nextcloud-libraries/cdav-library/commit/8e920b065135df1da5bda65e706dc52298888595))
 * find principal collections ([47cd7a5](https://github.com/nextcloud-libraries/cdav-library/commit/47cd7a5a372f89c11c798b997d66314fa58c8a73))
 
-
-
 # [1.3.0](https://github.com/nextcloud-libraries/cdav-library/compare/v1.1.0...v1.3.0) (2024-02-29)
 
 
@@ -211,9 +202,6 @@
 
 * implement updating a principal's schedule-default-calendar-URL ([182fc6f](https://github.com/nextcloud-libraries/cdav-library/commit/182fc6fdf3d5a85522fbc2c3275c9f9e4be702b1))
 
-
-
 # [1.1.0](https://github.com/nextcloud-libraries/cdav-library/compare/v0.1.0...v1.1.0) (2022-02-22)
 
-
-
+# 0.1.0 (2021-02-09)
