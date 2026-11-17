@@ -287,6 +287,26 @@ describe('Dav object model', () => {
 		});
 	});
 
+	it('should pass extra headers when updating an object', async () => {
+		const parent = new DavCollectionMock();
+		const request = new RequestMock()
+		const props = {
+			'{DAV:}getetag': '"etag"',
+			'{DAV:}getcontenttype': 'text/blub',
+			'{DAV:}resourcetype': [],
+		};
+
+		const davObject = new DavObject(parent, request, '/foo/bar/file', props, false);
+		davObject.data = 'FooBar';
+		davObject._isDirty = true;
+
+		request.put.mockResolvedValue({ body: null, status: 204, headers: {} });
+
+		await davObject.update({ 'Schedule-Reply': 'F', 'If-Match': '"other"', 'Content-Type': 'text/plain' });
+
+		expect(request.put).toHaveBeenCalledWith('/foo/bar/file', { 'Schedule-Reply': 'F', 'If-Match': '"etag"', 'Content-Type': 'text/blub; charset=utf-8' }, 'FooBar');
+	});
+
 	it('should update meta properties', () => {
 		const parent = new DavCollectionMock();
 		const request = new RequestMock();

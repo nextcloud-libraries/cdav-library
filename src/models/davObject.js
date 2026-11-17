@@ -150,9 +150,10 @@ export class DavObject extends DAVEventListener {
 	/**
 	 * updates the DavObject on the server
 	 *
+	 * @param {Record<string, string>} [headers] Extra request headers
 	 * @return {Promise<void>}
 	 */
-	async update() {
+	async update(headers = {}) {
 		// 1. Do not update filtered objects, because we would be loosing data on the server
 		// 2. No need to update if object was never modified
 		// 3. Do not update if called directly on DavObject, because there is no data prop
@@ -160,7 +161,7 @@ export class DavObject extends DAVEventListener {
 			return
 		}
 
-		const headers = {}
+		headers = { ...headers }
 
 		// updating an object should use it's content-type
 		if (this.contenttype) {

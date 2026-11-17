@@ -306,6 +306,19 @@ END:VCALENDAR
 		expect(request.propFind).not.toHaveBeenCalled();
 	});
 
+	it('should pass extra headers when creating a VObject', async () => {
+		const parent = new DavCollectionMock();
+		const request = new RequestMock();
+		const calendar = new Calendar(parent, request, '/foo/bar/folder', returnDefaultProps());
+
+		request.put.mockResolvedValue({ status: 201, body: null, headers: {} });
+
+		await calendar.createVObject('DATA123', { fetch: false, headers: { 'Schedule-Reply': 'F', 'Content-Type': 'text/plain' } });
+
+		expect(request.put).toHaveBeenCalledWith(expect.any(String), { 'Schedule-Reply': 'F', 'Content-Type': 'text/calendar; charset=utf-8' }, 'DATA123');
+		expect(request.propFind).not.toHaveBeenCalled();
+	});
+
 	it('should provide a calendar-query', () => {
 		const parent = new DavCollectionMock();
 		const request = new RequestMock();

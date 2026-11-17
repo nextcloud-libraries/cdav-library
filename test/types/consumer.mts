@@ -22,7 +22,10 @@ async function exerciseModels() {
 	const objects = await calendar.findByTypeInTimeRange('VEVENT', new Date(), new Date())
 	objects[0].data = 'BEGIN:VCALENDAR\r\nEND:VCALENDAR'
 	await objects[0].update()
+	await objects[0].update({ 'Schedule-Reply': 'F' })
 	const unfetched: null = await calendar.createVObject('BEGIN:VCALENDAR\r\nEND:VCALENDAR', { fetch: false })
+	await calendar.createVObject('BEGIN:VCALENDAR\r\nEND:VCALENDAR', { headers: { 'Schedule-Reply': 'F' } })
+	const unfetchedWithHeaders: null = await calendar.createVObject('BEGIN:VCALENDAR\r\nEND:VCALENDAR', { fetch: false, headers: { 'Schedule-Reply': 'F' } })
 	const books = await client.addressBookHomes[0].findAll()
 	const book = await client.addressBookHomes[0].createAddressBookCollection('Contacts')
 	await book.share('principal:principals/users/alice')
